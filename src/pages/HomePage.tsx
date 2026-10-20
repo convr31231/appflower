@@ -4,6 +4,7 @@ import { CalendarDays, ChevronRight } from 'lucide-react'
 import { featuredProducts } from '../data/products'
 import { PRICE_NOTE } from '../data/salons'
 import { useAppState } from '../state/store'
+import { asset } from '../lib/assets'
 import { CARD_NUMBER } from '../lib/bonuses'
 import { dateDistanceLabel, formatBonuses, formatEventDate } from '../lib/format'
 import { ProductCard } from '../components/ProductCard'
@@ -41,7 +42,7 @@ export function HomePage() {
           </Link>
         </div>
         <img
-          src="/assets/delivery-bouquet.png"
+          src={asset('assets/delivery-bouquet.png')}
           alt="Букет из магазина Дисконт Центр Роз"
           className="mx-auto h-64 w-full object-contain md:h-80"
         />

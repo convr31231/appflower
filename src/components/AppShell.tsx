@@ -4,6 +4,7 @@ import { APP_INFO } from '../data/salons'
 import { DemoBadge } from './DemoBadge'
 import { StaffPanel } from './StaffPanel'
 import { useAppState } from '../state/store'
+import { asset } from '../lib/assets'
 import { CARD_NUMBER } from '../lib/bonuses'
 import { dateDistanceLabel, formatBonuses, formatEventDate } from '../lib/format'
 
@@ -31,7 +32,7 @@ export function AppShell() {
       <div className="mx-auto grid min-h-dvh w-full max-w-[1440px] lg:grid-cols-[248px_minmax(0,1fr)] xl:grid-cols-[248px_minmax(0,1fr)_300px]">
         <aside className="sticky top-0 hidden h-dvh flex-col border-r border-line px-4 py-6 lg:flex">
           <Link to="/" className="block px-2">
-            <img src="/assets/logo.png" alt="Дисконт Центр Роз" className="h-14 w-auto" />
+            <img src={asset('assets/logo.png')} alt="Дисконт Центр Роз" className="h-14 w-auto" />
           </Link>
           <nav className="mt-8 flex flex-1 flex-col gap-1" aria-label="Разделы">
             {navItems.map((item) => (
@@ -51,7 +52,7 @@ export function AppShell() {
             <div className="flex items-center gap-3">
               <Link to="/" className="shrink-0 lg:hidden">
                 <img
-                  src="/assets/logo.png"
+                  src={asset('assets/logo.png')}
                   alt="Дисконт Центр Роз"
                   className="h-12 w-auto max-w-32 object-contain object-left"
                 />

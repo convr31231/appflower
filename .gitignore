@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+demo-video/node_modules
+demo-video/raw
+demo-video/frames
 
 # Editor directories and files
 .vscode/*
