@@ -1,0 +1,11 @@
+{
+  "name": "centr-roz-demo-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "record": "node record.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
+  }
+}
